@@ -36,36 +36,5 @@ dependencies {
 
 }
 
-//2、自定义一些属性，这些属性在upload.gradle都会使用到
-ext {
-
-    //发布到bintray上仓库名，执行上传前必须手动创建同名到仓库，否则上传会失败
-    bintrayRepo = 'maven'
-    bintrayName = 'SkySupport'
-
-    //群组id
-    publishedGroupId = 'org.sky.adid.dev'
-    //发布成库的名称
-    libraryName = 'SkySupport'
-    //最好和libraryName保持一致
-    artifact = 'SkySupport'
-
-    //库描述
-    libraryDescription = 'a android library for development utils tools'
-
-    siteUrl = 'https://github.com/sk569437/SkySupport'
-    gitUrl = 'https://github.com/sk569437/SkySupport.git'
-
-    libraryVersion = '1.0.1'
-
-    developerId = 'sk569437'
-    developerName = 'yixin'
-    developerEmail = 'shikunxh@126.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-//此处是为了将发布的代码逻辑封装到upload.gradle脚步中去了，这样build.gradle更简洁，代码维护性更高
+//2.此处是为了将发布的代码逻辑封装到upload.gradle脚步中去了，这样build.gradle更简洁，代码维护性更高
 apply from : 'upload.gradle'
