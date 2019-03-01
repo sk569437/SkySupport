@@ -56,7 +56,7 @@ ext {
     siteUrl = 'https://github.com/sk569437/SkySupport'
     gitUrl = 'https://github.com/sk569437/SkySupport.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'sk569437'
     developerName = 'yixin'

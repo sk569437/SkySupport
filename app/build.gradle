@@ -31,4 +31,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':SkySupport')
+
+    //This is SkySupport library aar called integration begin
+//    implementation 'org.sky.adid.dev:SkySupport:1.0.1'
+    //This is SkySupport library aar called integration end
 }
